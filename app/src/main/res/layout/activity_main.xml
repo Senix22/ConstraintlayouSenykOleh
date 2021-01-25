@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myLine"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oleh"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/myLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/parentsLine"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/horizontalParents"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veronika"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/parentsLine"
+        app:layout_constraintEnd_toStartOf="@+id/me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myLine" />
+
+    <TextView
+        android:id="@+id/father"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serhiy"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/parentsLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/me"
+        app:layout_constraintTop_toBottomOf="@+id/me" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/grandParentsLine"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/Stanislav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stanislav"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/grandParentsLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/parentsLine" />
+
+    <TextView
+        android:id="@+id/Olha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Olha"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/grandParentsLine"
+        app:layout_constraintEnd_toStartOf="@+id/horizontalParents"
+        app:layout_constraintTop_toTopOf="@+id/parentsLine" />
+
+    <TextView
+        android:id="@+id/Alla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alla"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/grandParentsLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/parentsLine" />
+
+    <TextView
+        android:id="@+id/Leonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Leonid"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/grandParentsLine"
+        app:layout_constraintStart_toEndOf="@id/horizontalParents"
+        app:layout_constraintTop_toTopOf="@+id/parentsLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
